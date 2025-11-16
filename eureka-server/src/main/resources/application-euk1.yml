@@ -14,3 +14,12 @@ eureka:
     # metadata元数据
     metadata-map:
       dalao: baihailang1
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health,metrics  # 确保包含 info
+      base-path: /actuator  # 默认就是 /actuator
+  endpoint:
+    info:
+      enabled: true

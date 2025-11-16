@@ -10,3 +10,12 @@ eureka:
     enabled: true
     serviceUrl:
       defaultZone: http://euka1.com:8761/eureka/,http://euka2.com:8762/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health,metrics  # 确保包含 info
+      base-path: /actuator  # 默认就是 /actuator
+  endpoint:
+    info:
+      enabled: true

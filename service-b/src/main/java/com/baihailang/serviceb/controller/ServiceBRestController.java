@@ -26,4 +26,10 @@ public class ServiceBRestController {
                 .body(String.class);
         return serviceAResponse;
     }
+
+    @GetMapping("/helloWorld")
+    public String helloWorld2() {
+        System.out.println("helloWorld serviceB");
+        return "helloWorld serviceB";
+    }
 }

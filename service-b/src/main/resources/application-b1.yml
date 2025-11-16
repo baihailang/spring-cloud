@@ -8,16 +8,8 @@ eureka:
   instance:
     # 心跳间隔时间，默认30秒
     lease-renewal-interval-in-seconds: 5
+    hostname: 127.0.0.1
+    appname: serviceb
   client:
     serviceUrl:
       defaultZone: http://euka1.com:8761/eureka/,http://euka2.com:8762/eureka/
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: info,health,metrics  # 确保包含 info
-      base-path: /actuator  # 默认就是 /actuator
-  endpoint:
-    info:
-      enabled: true
