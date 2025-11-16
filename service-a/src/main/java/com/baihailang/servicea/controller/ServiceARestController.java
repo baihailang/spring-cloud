@@ -24,7 +24,7 @@ public class ServiceARestController {
 
 
     @Resource
-    RestTemplate resttemplate;
+    RestTemplate restTemplate;
 
 
     @GetMapping("/helloWorld")
@@ -70,7 +70,7 @@ public class ServiceARestController {
         // 构建完整URL：服务实例URI + "/" + 目标接口路径
         // 直接在方法内创建RestTemplate实例（实际应用中建议注入为Bean以提高性能）
         // 返回调用结果
-        return resttemplate.getForObject(service.getUri().toString()+"/"+url, String.class);
+        return restTemplate.getForObject(service.getUri().toString()+"/"+url, String.class);
     }
 
 

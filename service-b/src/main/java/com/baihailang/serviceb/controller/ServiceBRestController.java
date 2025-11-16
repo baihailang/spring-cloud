@@ -1,5 +1,6 @@
 package com.baihailang.serviceb.controller;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,6 +12,9 @@ public class ServiceBRestController {
 
     private final DiscoveryClient discoveryClient;
     private final RestClient restClient;
+
+    @Value("${server.port}")
+    private int serverPort;
 
     public ServiceBRestController(DiscoveryClient discoveryClient, RestClient.Builder restClientBuilder) {
         this.discoveryClient = discoveryClient;
@@ -30,6 +34,6 @@ public class ServiceBRestController {
     @GetMapping("/helloWorld")
     public String helloWorld2() {
         System.out.println("helloWorld serviceB");
-        return "helloWorld serviceB";
+        return "helloWorld serviceB port:"+serverPort;
     }
 }

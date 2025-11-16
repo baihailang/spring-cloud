@@ -1,15 +1,17 @@
 spring:
   application:
     name: servicea
-server:
-  port: 8081
 
+server:
+  port: 8084
 
 eureka:
   client:
     enabled: true
     serviceUrl:
       defaultZone: http://alang:baihailangai001@euka1.com:8761/eureka/,http://alang:baihailangai001@euka2.com:8762/eureka/
+
+
 management:
   endpoints:
     web:
