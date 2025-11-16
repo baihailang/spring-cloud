@@ -1,24 +1,37 @@
 spring:
+  security:
+    user:
+      name: alang
+      password: baihailangai001
   application:
     name: eureka-server
+
 server:
   port: 8761
+
 eureka:
   client:
     serviceUrl:
       # eureka-server的地址
-      defaultZone: http://euka2.com:8762/eureka/
+      defaultZone: http://alang:baihailangai001@euka2.com:8762/eureka/
+    healthcheck:
+      # 开启健康检查
+      enabled: true
   instance:
     # 注册到eureka-server的实例名称
     hostname: euka1.com
     # metadata元数据
     metadata-map:
       dalao: baihailang1
+  server:
+    # 关闭自我保护模式
+    enable-self-preservation: false
+
 management:
   endpoints:
     web:
       exposure:
-        include: info,health,metrics  # 确保包含 info
+        include: "*"  # 确保包含 info
       base-path: /actuator  # 默认就是 /actuator
   endpoint:
     info:

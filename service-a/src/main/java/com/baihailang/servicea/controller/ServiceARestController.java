@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.ArrayList;
-import java.util.List;
 
 @RestController
 public class ServiceARestController {
@@ -23,6 +21,11 @@ public class ServiceARestController {
 
     @Resource
     LoadBalancerClient loadBalancerClient;
+
+
+    @Resource
+    RestTemplate resttemplate;
+
 
     @GetMapping("/helloWorld")
     public String helloWorld() {
@@ -63,12 +66,13 @@ public class ServiceARestController {
         // 使用LoadBalancerClient选择目标服务的一个实例（支持负载均衡）
         // 负载均衡器会根据配置的策略（如轮询、随机等）选择合适的服务实例
         ServiceInstance service = loadBalancerClient.choose(serviceName);
-        
         // 使用RestTemplate发起HTTP GET请求到目标服务
         // 构建完整URL：服务实例URI + "/" + 目标接口路径
         // 直接在方法内创建RestTemplate实例（实际应用中建议注入为Bean以提高性能）
-        String restr = new RestTemplate().getForObject(service.getUri().toString()+"/"+url, String.class);
         // 返回调用结果
-        return restr;
+        return resttemplate.getForObject(service.getUri().toString()+"/"+url, String.class);
     }
+
+
+
 }

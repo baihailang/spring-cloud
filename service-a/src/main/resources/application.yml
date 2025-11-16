@@ -9,13 +9,15 @@ eureka:
   client:
     enabled: true
     serviceUrl:
-      defaultZone: http://euka1.com:8761/eureka/,http://euka2.com:8762/eureka/
+      defaultZone: http://alang:baihailangai001@euka1.com:8761/eureka/,http://alang:baihailangai001@euka2.com:8762/eureka/
 management:
   endpoints:
     web:
       exposure:
-        include: info,health,metrics  # 确保包含 info
+        # 暴露所有 Web 指标
+        include: "*"
       base-path: /actuator  # 默认就是 /actuator
   endpoint:
     info:
       enabled: true
+

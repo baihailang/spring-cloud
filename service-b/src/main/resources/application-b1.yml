@@ -12,4 +12,4 @@ eureka:
     appname: serviceb
   client:
     serviceUrl:
-      defaultZone: http://euka1.com:8761/eureka/,http://euka2.com:8762/eureka/
+      defaultZone: http://alang:baihailangai001@euka1.com:8761/eureka/,http://alang:baihailangai001@euka2.com:8762/eureka/
