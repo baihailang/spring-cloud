@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0445dab5-a351-4616-87c9-87f970b5be8c" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/MarsCodeWorkspaceAppSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Spring_Cloud.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application-euk1.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application-euk2.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-a/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-b/src/main/java/com/baihailang/serviceb/controller/ServiceBRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-b/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="0445dab5-a351-4616-87c9-87f970b5be8c" name="更改" comment="`1`" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,11 +140,32 @@
       <updated>1763167028517</updated>
       <workItem from="1763167029983" duration="2400000" />
       <workItem from="1763207304863" duration="6671000" />
-      <workItem from="1763257338758" duration="11190000" />
+      <workItem from="1763257338758" duration="11493000" />
     </task>
+    <task id="LOCAL-00001" summary="`1`">
+      <option name="closed" value="true" />
+      <created>1763270219096</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1763270219096</updated>
+    </task>
+    <task id="LOCAL-00002" summary="`1`">
+      <option name="closed" value="true" />
+      <created>1763270225449</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1763270225449</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="`1`" />
+    <option name="LAST_COMMIT_MESSAGE" value="`1`" />
   </component>
 </project>
