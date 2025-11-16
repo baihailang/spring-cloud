@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: serviceb
+server:
+  port: 8082
+
+eureka:
+  instance:
+    # 心跳间隔时间，默认30秒
+    lease-renewal-interval-in-seconds: 5
+  client:
+    serviceUrl:
+      defaultZone: http://euka1.com:8761/eureka/,http://euka2.com:8762/eureka/
+
