@@ -2,22 +2,15 @@ spring:
   application:
     name: serviceb
 server:
-  port: 8082
+  port: 8083
 
 eureka:
   instance:
+    # 注册到eureka-server的实例名称
+    hostname: 127.0.0.1
     # 心跳间隔时间，默认30秒
     lease-renewal-interval-in-seconds: 5
+    appname: serviceb
   client:
     serviceUrl:
       defaultZone: http://euka1.com:8761/eureka/,http://euka2.com:8762/eureka/
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: info,health,metrics  # 确保包含 info
-      base-path: /actuator  # 默认就是 /actuator
-  endpoint:
-    info:
-      enabled: true
