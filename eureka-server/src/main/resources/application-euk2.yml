@@ -11,3 +11,6 @@ eureka:
   instance:
     # 注册到eureka-server的实例名称
     hostname: euka2.com
+    # metadata元数据
+    metadata-map:
+      dalao: baihailang2
