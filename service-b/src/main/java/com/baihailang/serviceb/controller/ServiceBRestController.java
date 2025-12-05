@@ -18,6 +18,7 @@ public class ServiceBRestController {
 
     public ServiceBRestController(DiscoveryClient discoveryClient, RestClient.Builder restClientBuilder) {
         this.discoveryClient = discoveryClient;
+        
         restClient = restClientBuilder.build();
     }
 
